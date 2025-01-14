@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="860" height="200" fill="#f8f9fa" rx="10"/>
+
+  <!-- Step 1: Button Press -->
+  <rect x="20" y="60" width="120" height="80" rx="8" fill="#1a1a2e" stroke="#1a1a2e"/>
+  <text x="80" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Button</text>
+  <text x="80" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Press</text>
+  <text x="80" y="128" text-anchor="middle" fill="#a0aec0" font-size="10">GPIO trigger</text>
+
+  <!-- Arrow 1 -->
+  <line x1="140" y1="100" x2="163" y2="100" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Camera Capture -->
+  <rect x="163" y="60" width="120" height="80" rx="8" fill="#1a1a2e" stroke="#1a1a2e"/>
+  <text x="223" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Camera</text>
+  <text x="223" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Capture</text>
+  <text x="223" y="128" text-anchor="middle" fill="#a0aec0" font-size="10">OpenCV / USB cam</text>
+
+  <!-- Arrow 2 -->
+  <line x1="283" y1="100" x2="306" y2="100" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Preprocess -->
+  <rect x="306" y="60" width="120" height="80" rx="8" fill="#1a1a2e" stroke="#1a1a2e"/>
+  <text x="366" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Preprocess</text>
+  <text x="366" y="113" text-anchor="middle" fill="#a0aec0" font-size="10">Resize 224×224</text>
+  <text x="366" y="128" text-anchor="middle" fill="#a0aec0" font-size="10">Normalise [0,1]</text>
+
+  <!-- Arrow 3 -->
+  <line x1="426" y1="100" x2="449" y2="100" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: TFLite Inference -->
+  <rect x="449" y="60" width="120" height="80" rx="8" fill="#1a1a2e" stroke="#1a1a2e"/>
+  <text x="509" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">TFLite</text>
+  <text x="509" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Inference</text>
+  <text x="509" y="128" text-anchor="middle" fill="#a0aec0" font-size="10">MobileNetV2</text>
+
+  <!-- Arrow 4 -->
+  <line x1="569" y1="100" x2="592" y2="100" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Confidence Check -->
+  <rect x="592" y="60" width="120" height="80" rx="8" fill="#2d6a4f" stroke="#2d6a4f"/>
+  <text x="652" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Confidence</text>
+  <text x="652" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Check</text>
+  <text x="652" y="128" text-anchor="middle" fill="#b7e4c7" font-size="10">threshold = 0.75</text>
+
+  <!-- Arrow 5 -->
+  <line x1="712" y1="100" x2="735" y2="100" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Audio Output -->
+  <rect x="735" y="60" width="105" height="80" rx="8" fill="#1a1a2e" stroke="#1a1a2e"/>
+  <text x="787" y="93" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Audio</text>
+  <text x="787" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Output</text>
+  <text x="787" y="128" text-anchor="middle" fill="#a0aec0" font-size="10">pyttsx3 TTS</text>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <!-- Caption -->
+  <text x="430" y="185" text-anchor="middle" fill="#718096" font-size="11">
+    Handheld Currency Detection - Inference Pipeline (Raspberry Pi)
+  </text>
+
+</svg>
