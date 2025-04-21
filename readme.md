@@ -61,7 +61,7 @@ Each folder contains images of that denomination.
 
 ## Training
 
-Update the path constants at the top of [trainh5.py](trainh5.py) and run the script. It fine-tunes the model, saves the best checkpoint using ModelCheckpoint, and automatically converts it to TFLite format at the end.
+Update the path constants at the top of [trainh5.py](trainh5.py) and run the script. It fine-tunes the model, saves the best checkpoint using ModelCheckpoint, and automatically converts the saved `.h5` file to TFLite format at the end. Training ran for around 40 to 50 epochs before early stopping kicked in on our dataset.
 
 ## Deployment on Raspberry Pi
 
