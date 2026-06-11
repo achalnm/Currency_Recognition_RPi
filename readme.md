@@ -4,7 +4,10 @@
 
 This was our final year B.E. project at Jyothy Institute of Technology (2024-2025). We wanted to build something that could genuinely help people. The device identifies Indian currency notes and reads the denomination aloud, so visually impaired individuals can use it independently without a smartphone or internet connection.
 
-We published this work in the IJRASET Journal, Volume 13, Issue 4, April 2025.
+This project was accepted and published in the IJRASET Journal, Volume 13, Issue 4, April 2025. The paper title is "Handheld Currency Detection Device for the Visually Impaired Using Deep Learning". Both the journal certificate and the full published paper are included in this repository.
+
+[Read the published paper on IJRASET](https://www.ijraset.com/best-journal/currency-detection-for-the-visually-impaired-using-deep-learning)
+
 
 ## How It Works
 
