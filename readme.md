@@ -75,7 +75,7 @@ Update the path constants at the top of [trainh5.py](trainh5.py) and run the scr
 
 ## Publication
 
-This project was accepted and published in the IJRASET Journal, Volume 13, Issue 4, April 2025. The paper title is "Handheld Currency Detection Device for the Visually Impaired Using Deep Learning". Both the journal certificate and the full published paper are included in this repository.
+This project was accepted and published in the IJRASET Journal, Volume 13, Issue V, May 2025. The paper title is “Currency Detection for the Visually Impaired Using Deep Learning”. Both the journal certificate and the full published paper are included in this repository.
 
 ## Team
 
